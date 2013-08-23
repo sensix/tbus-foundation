@@ -1,0 +1,84 @@
+html, body {height:100%;}
+
+body {background:#ffffff}
+
+.small-12 .orbit-container {width:93%; margin:0 auto 20px auto}
+
+.slideshow-wrapper .orbit-container li .orbit-caption,
+.orbit-container .orbit-slides-container > * .orbit-caption {display:none}
+.orbit-container {margin-bottom:10px}
+
+.top-bar, .top-bar .name {height:70px; background-color:transparent}
+.top-bar {margin-bottom:0}
+.top-bar .name h1 a {background:transparent url(../img/tbus-logo.png) 0 0 no-repeat; width:170px; height:70px;
+	font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+	background-color: transparent;
+	border: 0	
+	}
+	
+
+.top-bar .toggle-topbar.menu-icon a {color:#c20509}
+.top-bar .toggle-topbar.menu-icon a span {
+    box-shadow: 0 10px 0 1px #666666, 0 16px 0 1px #666666, 0 22px 0 1px #666666;
+}
+.top-bar.expanded .toggle-topbar.menu-icon a span {
+    box-shadow: 0 10px 0 1px #c20509, 0 16px 0 1px #c20509, 0 22px 0 1px #c20509;
+}
+.top-bar.expanded .title-area {background-color:#ffffff}
+.top-bar-section ul li > a:hover {color:#c20509}
+
+.top-bar.expanded .top-bar-section ul li > a {border-bottom:1px solid #ffffff; background-color:#999999}
+
+
+.column, .columns {float:right}
+
+
+img.icona {display:block; margin: 0 auto; padding:0}
+h6.panel {border:0; background:none; color:#999999; font-size: 0.8em; text-align: center; padding:0}
+
+
+.button.tbus {background-color:#c20509; border-color:#a60407;}
+.button.tbus:hover {background-color:#db060b; border-color:#db060b;}
+.button.tbus.disabled {background-color:#999999; border-color:#999999;}
+
+
+footer p.note, footer p.note a:link, footer p.note a:visited {color:#999999; font-size:0.8em; line-height: 33px; text-align:right}
+footer p.note a:hover{color:#000000;}
+
+
+/*Da tablet landscape in su!*/
+
+@media only screen and (min-width: 940px) {
+body {background:#ffffff url(../img/sfondo-pagina.png) top center no-repeat fixed}
+
+.top-bar {background-color:transparent; height:70px; margin-top:20px; margin-bottom:0}
+.top-bar-section ul {background-color:transparent; margin-top:20px;}
+
+.top-bar-section li a:not(.button) {background-color:transparent; line-height:20px; color:#c20509}
+.no-js .top-bar-section ul li:hover > a {background-color:transparent; line-height:20px; color:#000000}	
+.top-bar-section li.separatore {border-right:1px solid #000000}
+}
+
+
+
+/*SOLO IE 8 e 7*/
+
+.lt-ie9 li.name h1 a {
+	background:transparent url(../img/tbus-logo.png) 0 0 no-repeat; display:block; width:170px; height:70px;
+	text-indent: -9999em;
+    color: transparent;
+	border:0
+	}
+
+.lt-ie9 .top-bar-section li {height:20px;}
+.lt-ie9 .top-bar-section li a {background-color:transparent; line-height:20px; color:#c20509; padding: 0 10px;}
+.lt-ie9 .top-bar-section li a:hover {color:#000000}
+
+.lt-ie9 div.columns {float:right}
+
+
+
+
+
