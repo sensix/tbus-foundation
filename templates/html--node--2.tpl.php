@@ -132,7 +132,7 @@ nope: '<?php print base_path() . path_to_theme(); ?>/HTML-STATIC/js/vendor/respo
 			<ul data-orbit data-options="animation: fade; navigation_arrows:false; slide_number:false; timer_speed:30000; bullets:false; timer:false">
 				  <li>
 					<img src="<?php print base_path() . path_to_theme(); ?>/HTML-STATIC/img/Slide01_small.jpg" />
-					<div class="orbit-caption">Da oggi Ti muovi facile!</div>
+					<div class="orbit-caption">Da oggi T muovi facile!</div>
 				  </li>
 			</ul>
       </div>
@@ -170,8 +170,8 @@ nope: '<?php print base_path() . path_to_theme(); ?>/HTML-STATIC/js/vendor/respo
         </div>
 		
         <div class="large-3 small-6 columns">
-          <img class="icona" src="<?php print base_path() . path_to_theme(); ?>/HTML-STATIC/img/iwatch_ico.png" />
-          <h6 class="panel">Per i'm Watch</h6>
+          <img class="icona" src="<?php print base_path() . path_to_theme(); ?>/HTML-STATIC/img/tizen-iwatch.png" />
+          <h6 class="panel">Per dispositivi<br/>Tizen/IWatch</h6>
 		  <a class="button tbus medium round expand disabled" href="#" title="work in progress">work in progress</a>
         </div>		
 
