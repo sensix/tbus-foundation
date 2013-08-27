@@ -1,11 +1,11 @@
-<header class="row">
+<div class="row">
   <?php if ($linked_site_name || $linked_logo): ?>
-    <div class="two columns">
+    <div class="five columns">
       <?php if ($linked_logo): ?>
         <?php print $linked_logo; ?>
       <?php endif; ?>
     </div>
-    <div class="four columns">
+    <div class="seven columns text-right">
       <?php if ($is_front): ?>
         <h1 id="site-name"><?php print $linked_site_name; ?></h1>
       <?php else: ?>
@@ -13,12 +13,7 @@
       <?php endif; ?>
     </div>
   <?php endif; ?>
-    <?php if ($main_menu_links): ?>
-      <nav class="six columns">
-        <?php print $main_menu_links; ?>
-      </nav>
-    <?php endif; ?>
-</header>
+</div>
 
 <?php if (!empty($page['header'])): ?>
   <div class="row">
@@ -28,43 +23,36 @@
   </div>
 <?php endif; ?>
 
-<div class="row">
-  <div class="<?php $site_slogan ? print 'six' : print 'four columns offset-by-eight'; ?> columns hide-for-small">
-    <p>
-      <?php if ($logged_in): ?>
-        <?php print l(t('My Account'), 'user'); ?>
-        <?php print l(t('Logout'), 'user/logout'); ?>
+<?php if ($main_menu_links || !empty($page['navigation'])): ?>
+  <div class="row">
+    <nav class="twelve columns">
+      <?php if (!empty($page['navigation'])): ?>
+        <?php print render($page['navigation']);?>
       <?php else: ?>
-        <?php print l(t('Login'), 'user/login', array('attributes' => array('class' => array('large', 'radius', 'button')))); ?>
-        <?php print l(t('Sign Up'), 'user/register', array('attributes' => array('class' => array('large', 'radius', 'success', 'button')))); ?>
-      <?php endif;  ?>
-    </p>  
+        <?php print $main_menu_links; ?>
+      <?php endif; ?>
+    </nav>
   </div>
-  <?php if ($site_slogan): ?>
-    <div class="six columns panel radius hide-for-small">
+<?php endif; ?>
+
+<?php if ($site_slogan): ?>
+  <div class="row">
+    <div class="twelve columns panel radius">
       <?php print $site_slogan; ?>
     </div>
-  <?php endif; ?>
-  <div class="show-for-small">
-    <div class="six mobile-two columns">
-      <p><?php print l(t('Login'), 'user/login', array('attributes' => array('class' => array('radius', 'button')))); ?></p>
-    </div>
-    <div class="six mobile-two columns">
-      <p><?php print l(t('Sign Up'), 'user/register', array('attributes' => array('class' => array('radius', 'success', 'button')))); ?></p>
-    </div>
   </div>
-</div>
+<?php endif; ?>
 <div class="row">
-  <?php if ($messages): print $messages; endif; ?>
-  <?php if (!empty($page['help'])): print render($page['help']); endif; ?>
   <div id="main" class="<?php print $main_grid; ?> columns">
+    <?php if ($breadcrumb): print $breadcrumb; endif; ?>
+    <?php if ($messages): print $messages; endif; ?>
+    <?php if (!empty($page['help'])): print render($page['help']); endif; ?>
     <?php if (!empty($page['highlighted'])): ?>
       <div class="highlight panel callout">
         <?php print render($page['highlighted']); ?>
       </div>
     <?php endif; ?>
     <a id="main-content"></a>
-    <?php if ($breadcrumb): print $breadcrumb; endif; ?>
     <?php if ($title && !$is_front): ?>
       <?php print render($title_prefix); ?>
       <h1 id="page-title" class="title"><?php print $title; ?></h1>
@@ -83,12 +71,12 @@
     <?php print render($page['content']); ?>
   </div>
   <?php if (!empty($page['sidebar_first'])): ?>
-    <div id="sidebar-first" class="<?php print $sidebar_first_grid; ?> columns sidebar ">
+    <div id="sidebar-first" class="<?php print $sidebar_first_grid; ?> columns sidebar">
       <?php print render($page['sidebar_first']); ?>
     </div>
   <?php endif; ?>
   <?php if (!empty($page['sidebar_second'])): ?>
-    <div id="sidebar-second" class="<?php print $sidebar_sec_grid;?> columns sidebar">
+    <div id="sidebar-second" class="<?php print $sidebar_sec_grid; ?> columns sidebar">
       <?php print render($page['sidebar_second']); ?>
     </div>
   <?php endif; ?>
@@ -115,7 +103,7 @@
 <div class="bottom-bar panel">
   <div class="row">
     <div class="twelve columns">
-      &copy; <?php print date('Y') . ' ' . check_plain($site_name) . ' ' . t('All rights reserved.'); ?>
+      &copy; <?php print date('Y') . ' ' . check_plain($site_name); ?>
     </div>
   </div>
 </div>

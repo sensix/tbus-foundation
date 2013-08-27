@@ -49,6 +49,9 @@
 
   <!-- Set the viewport width to device width for mobile -->
   <meta name="viewport" content="width=device-width" />
+  <meta name="Chiunque tu sia, da oggi ti muovi facile. Tbus è l'app che ti assiste nel trasporto pubblico della tua città." content="Free Web tutorials">
+  <meta name="App, trasporto pubblico, android, ios, windows mobile, tizen, watch, BitApp" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="BitApp">
 
   <title>Tbus - BitApp</title>
 
@@ -71,6 +74,38 @@ nope: '<?php print base_path() . path_to_theme(); ?>/HTML-STATIC/js/vendor/respo
 
 <div class="row">
   <div class="large-12 columns">
+  
+      <!-- POP Modali -->	
+	
+		  <div id="pop-joinus" class="reveal-modal large round">
+		  <h2>Join us</h2>
+		  <p class="lead">"BitApp è un'azienda giovane con una forte propensione ad innovare.
+			Cerchiamo persone con cui condividere il nostro entusiasmo e le nostre idee."</p>
+			<p>Se hai competenze in una delle piattaforme Android, iOS, Windows 7, Tizen e vuoi contribuire, inviaci il tuo curriculum a <a href="mailto:joinus@bitapp.it" title="inviaci il tuo curriculum">joinus@bitapp.it</a>.</p>
+          <a class="close-reveal-modal">&#215;</a>
+          </div>
+		  
+		  <div id="pop-credits" class="reveal-modal large round">
+		  <h2>Credits</h2>
+          <p class="lead">"Tbus è sviluppato da BitApp in collaborazione con Luca Girolimetto."</p>
+          <a class="close-reveal-modal">&#215;</a>
+          </div>
+		  
+		  <div id="pop-info-watch" class="reveal-modal large round">
+		  <h2>Whatch</h2>
+		  <p>	  
+			- Apple iWatch - <a href="http://www.techradar.com/news/portable-devices/apple-iwatch-release-date-news-and-rumours-1131043" title="dettagli" target="_blank">info</a><br/>
+			- Samsung Galaxy Gear - <a href="http://www.t3.com/news/samsung-galaxy-gear-smart-watch-price-release-date-and-specs" title="dettagli" target="_blank">info</a><br/>
+			- Sony - <a href="http://www.t3.com/news/sony-smartwatch-2-unveiled-water-resistant-and-android-friendly" title="dettagli" target="_blank">info</a><br/>
+			- i'm Watch - <a href="http://www.imsmart.com/it" title="dettagli" target="_blank">info</a><br/>
+			- Pebble - <a href="http://getpebble.com/" title="dettagli" target="_blank">info</a><br/>		  
+		  </p>
+          <a class="close-reveal-modal">&#215;</a>
+          </div>
+		  
+    <!-- fine POP Modali -->
+  
+  
 
     <!-- Navigation -->
 
@@ -103,7 +138,8 @@ nope: '<?php print base_path() . path_to_theme(); ?>/HTML-STATIC/js/vendor/respo
 
   <div class="row">
     <div class="large-12 columns">
-
+	
+	
     <!-- Desktop Slider -->
 
 		<div class="hide-for-small">
@@ -113,7 +149,7 @@ nope: '<?php print base_path() . path_to_theme(); ?>/HTML-STATIC/js/vendor/respo
 					<ul data-orbit data-options="animation: fade; navigation_arrows:false; slide_number:false; timer_speed:30000; bullets:false; timer:false">
 						  <li>
 							<img src="<?php print base_path() . path_to_theme(); ?>/HTML-STATIC/img/Slide01_big.png" />
-							<div class="orbit-caption">Da oggi T muovi facile!</div>
+							<div class="orbit-caption">Da oggi Ti muovi facile!</div>
 						  </li>
 					</ul>
 				</div>
@@ -132,7 +168,7 @@ nope: '<?php print base_path() . path_to_theme(); ?>/HTML-STATIC/js/vendor/respo
 			<ul data-orbit data-options="animation: fade; navigation_arrows:false; slide_number:false; timer_speed:30000; bullets:false; timer:false">
 				  <li>
 					<img src="<?php print base_path() . path_to_theme(); ?>/HTML-STATIC/img/Slide01_small.jpg" />
-					<div class="orbit-caption">Da oggi T muovi facile!</div>
+					<div class="orbit-caption">Da oggi Ti muovi facile!</div>
 				  </li>
 			</ul>
       </div>
@@ -171,7 +207,7 @@ nope: '<?php print base_path() . path_to_theme(); ?>/HTML-STATIC/js/vendor/respo
 		
         <div class="large-3 small-6 columns">
           <img class="icona" src="<?php print base_path() . path_to_theme(); ?>/HTML-STATIC/img/tizen-iwatch.png" />
-          <h6 class="panel">Per dispositivi<br/>Tizen/IWatch</h6>
+          <h6 class="panel">Per dispositivi<br/>Tizen e Watch (<a href="#" data-reveal-id="pop-info-watch" title ="info"><strong>?</strong></a>)</h6>
 		  <a class="button tbus medium round expand disabled" href="#" title="work in progress">work in progress</a>
         </div>		
 
@@ -196,7 +232,7 @@ nope: '<?php print base_path() . path_to_theme(); ?>/HTML-STATIC/js/vendor/respo
       <hr>
       <div class="row">
         <div class="large-12 columns">
-          <p class="note"><img class="bitapp" src="<?php print base_path() . path_to_theme(); ?>/HTML-STATIC/img/logo-bitapp.png" alt="logo BitApp"/>&copy; Copyright 2013 BitApp S.r.l. P.I. 03269751206  <!--| <a href="#">Condizioni d'uso</a> | <a href="#">Credits</a>--></p>
+          <p class="note"><img class="bitapp" src="<?php print base_path() . path_to_theme(); ?>/HTML-STATIC/img/logo-bitapp.png" alt="logo BitApp"/>&copy; Copyright BitApp 2013, P.I. 03269751206 | <span class="acapo"><a href="#" data-reveal-id="pop-joinus">Join us</a> | <a href="#" data-reveal-id="pop-credits">Credits</a></span><!--| <a href="#">Condizioni d'uso</a> | <a href="#">Credits</a>--></p>
         </div>
       </div>
     </div>

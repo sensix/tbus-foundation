@@ -2,6 +2,9 @@ html, body {height:100%;}
 
 body {background:#ffffff}
 
+a:link, a:visited {color:#c20509;}
+a:hover {color:#000000;}
+
 .small-12 .orbit-container {width:93%; margin:0 auto 20px auto}
 
 .slideshow-wrapper .orbit-container li .orbit-caption,
@@ -39,14 +42,21 @@ img.icona {display:block; margin: 0 auto; padding:0}
 h6.panel {border:0; background:none; color:#999999; font-size: 0.8em; text-align: center; padding:0}
 
 
-.button.tbus {background-color:#c20509; border-color:#a60407;}
+.button.tbus {background-color:#c20509; border-color:#a60407; color:#ffffff}
 .button.tbus:hover {background-color:#db060b; border-color:#db060b;}
 .button.tbus.disabled {background-color:#999999; border-color:#999999;}
 
 
-footer p.note, footer p.note a:link, footer p.note a:visited {color:#999999; font-size:0.8em; line-height: 33px; text-align:right}
+footer p.note, footer p.note a {color:#999999; /*font-size:0.8em;*/font-size:13px; line-height: 33px; text-align:right}
+footer p.note a:link, footer p.note a:visited {color:#c20509; font-weight:bold}
 footer p.note a:hover{color:#000000;}
 
+/*Mobile*/
+
+@media only screen and (max-width: 480px) {
+footer p.note, footer p.note a {font-size:15px; font-weight:bold}
+footer span.acapo {display:block;}
+}
 
 /*Da tablet landscape in su!*/
 
@@ -79,6 +89,27 @@ body {background:#ffffff url(../img/sfondo-pagina.png) top center no-repeat fixe
 .lt-ie9 div.columns {float:right}
 
 
+
+/* POP UP MODALI */
+#pop-joinus, #pop-credits, #pop-info-watch {
+background-color: #f4f4f4;
+-moz-border-radius: 20px;
+-webkit-border-radius: 20px;
+border-radius: 20px;
+}
+#pop-joinus h2, #pop-credits h2, #pop-info-watch h2 {color:#c20509; font-size: 1.2em}
+#pop-joinus p.lead, #pop-credits p.lead, #pop-info-watch p.lead {font-weight:bold; font-size: 0.9em}
+#pop-joinus p, #pop-credits p, #pop-info-watch p {font-size: 0.9em}
+#pop-joinus a:link,
+#pop-joinus a:visited,
+#pop-credits a:link,
+#pop-credits a:visited ,
+#pop-info-watch a:link,
+#pop-info-watch a:visited {color:#c20509; font-weight:bold;}
+
+#pop-joinus a:hover, #pop-credits a:hover, #pop-info-watch a:hover {color:#000000}
+
+div[id^="pop-"] h2 {border-bottom:1px solid #cccccc; margin-bottom:25px}
 
 
 
