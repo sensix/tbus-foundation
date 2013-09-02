@@ -79,15 +79,15 @@ nope: '<?php print base_path() . path_to_theme(); ?>/HTML-STATIC/js/vendor/respo
 	
 		  <div id="pop-joinus" class="reveal-modal large round">
 		  <h2>Join us</h2>
-		  <p class="lead">"BitApp è un'azienda giovane con una forte propensione ad innovare.
-			Cerchiamo persone con cui condividere il nostro entusiasmo e le nostre idee."</p>
+		  <p class="lead">BitApp è un'azienda giovane con una forte propensione ad innovare.
+			Cerchiamo persone con cui condividere il nostro entusiasmo e le nostre idee.</p>
 			<p>Se hai competenze in una delle piattaforme Android, iOS, Windows 7, Tizen e vuoi contribuire, inviaci il tuo curriculum a <a href="mailto:joinus@bitapp.it" title="inviaci il tuo curriculum">joinus@bitapp.it</a>.</p>
           <a class="close-reveal-modal">&#215;</a>
           </div>
 		  
 		  <div id="pop-credits" class="reveal-modal large round">
 		  <h2>Credits</h2>
-          <p class="lead">"Tbus è sviluppato da BitApp in collaborazione con Luca Girolimetto."</p>
+          <p class="lead">Tbus è sviluppato da BitApp in collaborazione con Luca Girolimetto.</p>
           <a class="close-reveal-modal">&#215;</a>
           </div>
 		  
@@ -190,13 +190,13 @@ nope: '<?php print base_path() . path_to_theme(); ?>/HTML-STATIC/js/vendor/respo
         <div class="large-3 small-6 columns">
           <img class="icona" src="<?php print base_path() . path_to_theme(); ?>/HTML-STATIC/img/apple.png" />
           <h6 class="panel">Per dispositivi<br/>Apple</h6>
-		  <a class="button tbus medium round expand" href="#" title="download">download</a>
+		  <a class="button tbus medium round expand" href="https://itunes.apple.com/it/app/t-bus-autobus-e-orari-sempre/id691115104?mt=8" title="download">download</a>
         </div>	
 		
 		<div class="large-3 small-6 columns">
           <img class="icona" src="<?php print base_path() . path_to_theme(); ?>/HTML-STATIC/img/android.png" />
           <h6 class="panel">Per dispositivi<br/>Android</h6>
-		  <a class="button tbus medium round expand" href="#" title="download">download</a>
+		  <a class="button tbus medium round expand disabled" href="#" title="work in progress">work in progress</a>
         </div>
 
         <div class="large-3 small-6 columns">
